@@ -1,0 +1,327 @@
+@charset "utf-8";
+
+html {
+  font-size: 10px;
+}
+
+a {
+  color: #9A5721;
+  text-decoration: none;
+}
+a:hover{
+  opacity: .5;
+}
+
+body {
+  background-color: #FFF8EB;
+  margin: 0;
+  font-family: 'source-han-serif-japanese', serif;
+  font-weight: 200;
+  font-size: 1.6rem;
+  font-style: normal; 
+  color: #9A5721;
+}
+
+p {
+  line-height: 1.75em;
+}
+
+.title{
+  letter-spacing: 0.32em;
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  font-size: 3.2rem;
+}
+
+.title img{
+  width: 2.8rem;
+  margin: 0 2.0rem 0 1.2rem;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+}
+
+/* Header */
+.hero {
+  background: url(../img/header.svg);
+  background-size: cover;
+  width: 100vw;
+  height: 41vw;
+}
+
+/* hamburger(ハンバーガーアイコン) */
+.hamburger {
+  position: fixed;
+  right: 2vw;
+  top: 2.4vw;
+  width: 4.0rem;
+  height: 3.2rem;
+  z-index: 300;
+  cursor: pointer;
+}
+
+.hamburger__line {
+  position: absolute;
+  width: 4.0rem;
+  height: 0.1rem;
+  right: 0;
+  background-color: #9A5721;
+  transition: all 0.5s;
+}
+
+.hamburger__line--1 {
+  top: 0px;
+}
+
+.hamburger__line--2 {
+  top: 10px;
+}
+
+.hamburger__line--3 {
+  top: 20px;
+}
+
+/*ハンバーガーがクリックされたら*/
+.open .hamburger__line--1 {
+  transform: rotate(-135deg);
+  top: 16px;
+}
+
+.open .hamburger__line--2 {
+  opacity: 0;
+}
+
+.open .hamburger__line--3 {
+  transform: rotate(135deg);
+  top: 16px;
+}
+
+/* sp-nav(ナビ)=================================== */
+.sp-nav {
+  opacity: .8;
+  position: fixed;
+  right: -100%; /*ハンバーガーがクリックされる前はWindow右側に隠す*/
+  top: 0;
+  width: 70%; /* 出てくるスライドメニューの幅 */
+  height: 100vh;
+  background-color: #fff;
+  transition: all 0.5s;
+  z-index: 200;
+  /* overflow-y: auto; メニューが多くなったらスクロールできるように */
+  text-align: center;
+  font-size: 3.2rem;
+  letter-spacing: 0.2em;
+}
+
+/*ハンバーガーがクリックされたら右からスライド*/
+.open .sp-nav {
+  right: 0;
+}
+
+/* black-bg(ハンバーガーメニュー解除用bg)*/
+.black-bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 5;
+  background-color: #000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+  cursor: pointer;
+  z-index: 100;
+}
+
+/*ハンバーガーメニューが開いたら表示*/
+.open .black-bg {
+  opacity: 0.3;
+  visibility: visible;
+}
+
+/* menu */
+li {
+  list-style: none;
+  padding-bottom: 6.4rem;
+}
+
+ul {
+  margin-top: 20vh;
+}
+
+/* logo */
+.logo{
+  text-align: center;
+}
+
+.logo > img {
+  padding-top: 4.32vw;
+  width: 23.28vw;
+}
+
+/* 2分割レイアウト */
+.layout_2_div {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ABOUT */
+.area_home_about {
+  margin-top: 4.8rem;
+}
+
+.img_about,.img_works{
+  width: 100%;
+  border-radius: 2.5em;
+}
+
+h3 {
+  font-size: 2.4rem;
+  letter-spacing: 0.2em;
+  margin: 0;
+}
+
+
+.profile,.body_home,.work {
+  margin: 0 16px 0;
+  width: 400px;
+}
+
+.body_home {
+  display: flex;
+  align-items: center;
+}
+
+/* Favorite */
+.imgs_favorite {
+  display: flex;
+  justify-content: space-between;
+}
+
+.img_fav {
+  margin-top: 1.6rem;
+  text-align: center;
+}
+
+.img_fav img {
+  width: 5.6rem;
+}
+
+.img_fav p {
+  margin: 0;
+}
+
+/* SKILLS */
+
+.area_home_skills {
+  margin: 9.6rem 16px 0;
+}
+
+.skills {
+  background-color: #F8E3C9;
+  max-width: 928px;
+  margin: auto;
+  padding-bottom: 5.6rem;
+  border-radius: 2.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* WORKS */
+.area_home_works {
+  margin-top: 8rem;
+  width: 100vw;
+}
+
+.ttl_work {
+  font-size: 2.0rem;
+  letter-spacing: 0.05em;
+  text-align: center;
+  margin: 0.8rem 0 3.2rem;
+}
+
+/* Footer */
+.footer {
+  background: url(../img/footer.svg);
+  background-size: cover;
+  width: 100vw;
+  height: 8.785vw;
+  margin-top: 8rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.copyright {
+  font-size: 1.2rem;
+  margin: 0;
+  text-align: center;
+  padding-bottom: 2.34vw;
+}
+
+ /* coming soon */
+.coming {
+  text-align: center;
+  position: relative;
+} 
+.soon {
+  position:absolute;
+  top:40%;
+  width:100%;
+} 
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 8.75px;
+  }
+
+  .logo > img {
+    width: 33.33vw;
+  } 
+
+/* 全部一列にする */
+  .layout_2_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } 
+
+  .profile {
+    margin: 3.2rem;
+  }
+
+  .img_about{
+    object-fit:cover;
+    object-position: 100% 0;
+    height: 300px;
+  }
+  
+  .skills {
+    width: 400px;
+  }
+}
+
+  @media screen and (max-width: 480px) {
+    html {
+      font-size: 7.5px;
+    }
+    .main,.body_home,.img_about,.profile,.skills,.work {
+      width: 83vw;
+    }
+
+    p {
+      font-size: 14px;
+    }
+    
+    .img_about{
+      height: 62.5vw;
+    }
+  }

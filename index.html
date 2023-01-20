@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yuki Harada Portfolio</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    (function(d) {
+      var config = {
+        kitId: 'tyr4ved',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
+</head>
+
+<body>
+  <header>
+    <div class="hero">
+      <!-- ハンバーガーアイコン -->
+      <div id="nav-wrapper" class="nav-wrapper">
+        <div class="hamburger" id="js-hamburger">
+          <span class="hamburger__line hamburger__line--1"></span>
+          <span class="hamburger__line hamburger__line--2"></span>
+          <span class="hamburger__line hamburger__line--3"></span>
+        </div>
+        <nav class="sp-nav">
+          <ul id="js-black-bg">
+            <li><a href="index.html" >HOME</a></li>
+            <li><a href=#about>ABOUT</a></li>
+            <li><a href="#skill">SKILL</a></li>
+            <li><a href="#works">WORKS</a></li>
+          </ul>
+        </nav>
+        <div class="black-bg" id="js-black-bg"></div>
+      </div>
+
+      <!-- ロゴ -->
+      <div class="logo">
+        <img src="img/logo.svg" alt="">
+      </div>
+    </div>
+  </header>
+  
+  <main>
+    <!-- ABOUT -->
+    <section class="area_home_about">
+      <div class="title">
+        <img src="img/flower.svg" alt="">
+        <h2 id="about">ABOUT</h2>
+        <img src="img/flower.svg" alt="">
+      </div>
+      <div class="container">
+        <div class="layout_2_div">
+          
+          <!-- 1 -->
+          <div class="body_home">
+            <img class="img_about" src="img/about.jpg" alt="">
+          </div>
+
+          <!-- 2 -->
+          <div class="profile" >
+            <!-- Yuki Harada -->
+            <h3>Yuki Harada</h3>
+              <p>
+                1996年札幌市生まれ<br>
+                北海道札幌西高等学校を卒業<br>
+                藤女子大学に在学中、カナダにワーキングホリデーへ<br>
+                大学卒業後、アマゾンジャパン合同会社に入社<br>
+                エンジニアを目指し、独学で勉強中。
+              </p>
+            <!-- FAVORITE -->
+          <div>
+            <h3>Favorite</h3>
+              <div class="imgs_favorite">
+                <div class="img_fav">
+                  <img src="img/travel.svg" alt="">                    
+                  <p>Travel</p>
+                </div>
+                <div class="img_fav">
+                  <img src="img/coffee.svg" alt="">
+                  <p>Coffee</p>
+                </div>
+                <div class="img_fav">
+                  <img src="img/fassion.svg" alt="">
+                  <p>Fassion</p>
+                </div>
+              </div>
+              <div class="imgs_favorite">
+                <div class="img_fav">
+                  <img src="img/reading.svg" alt="">
+                  <p>Reading</p>
+                </div>
+                <div class="img_fav">
+                  <img src="img/snowboard.svg" alt="">
+                  <p>Snowboard</p>
+                </div>
+                <div class="img_fav">
+                  <img src="img/cooking.svg" alt="">
+                  <p>Cooking</p>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skill -->
+    <section class="area_home_skills">
+      <!-- <div > -->
+
+        <div class="skills">
+          <div class="title">
+            <img src="img/leaf.svg" alt="">
+            <h2 id="skill">SKILL</h2>
+            <img src="img/leaf.svg" alt="">
+          </div>
+          <p>
+            Certification：TOEIC 910点, ITパスポート <br>
+            Design：Photoshop, XD <br>
+            Cording：HTML, CSS, Java Script
+          </p>
+        </div>
+      <!-- </div> -->
+    </section>
+
+    <!-- Works -->
+    <section class="area_home_works">
+      <div class="title">
+        <img src="img/flower.svg" alt="">
+        <h2 id="works">WORKS</h2>
+        <img src="img/flower.svg" alt="">
+      </div>
+      <div class="container">
+        <div class="layout_2_div ">
+          <!-- 1 -->
+          <div class="work">
+            <a href="https://yuki025.github.io/myecsite/">
+              <img class="img_works" src="img/ec.jpg" alt="">
+              <p class="ttl_work">仮想ECサイト</p>
+            </a>
+          </div>
+          <!-- 2 -->
+          <div class="work">
+            <a href="works.html">
+              <img class="img_works" src="img/todo.jpg" alt="">
+              <p class="ttl_work">To Doアプリ</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  
+  <!-- footer -->
+  <footer>
+    <div class="footer">
+      <p class="copyright">© 2022 Yuki</p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
