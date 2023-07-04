@@ -235,6 +235,14 @@ h3 {
   align-items: center;
 }
 
+.skills .title {
+  padding-top: 3.2rem;
+}
+
+.skills p {
+  margin-top: 0;
+}
+
 /* WORKS */
 .area_home_works {
   margin-top: 8rem;
