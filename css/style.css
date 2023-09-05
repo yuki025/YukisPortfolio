@@ -243,6 +243,11 @@ h3 {
   margin-top: 0;
 }
 
+.skills a {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 /* WORKS */
 .area_home_works {
   margin-top: 8rem;
