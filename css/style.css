@@ -244,8 +244,8 @@ h3 {
 }
 
 .skills a {
-  cursor: pointer;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 /* WORKS */
